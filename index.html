@@ -13,29 +13,28 @@
         <span><img src="./assets/icon.png" height="40"></span>
     </header>
     <main>
-        <div class="content">
-            <textarea id="enter_text" type="text" placeholder="Digite seu texto"></textarea>
-            <div class="content-alert">
-                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z"/></svg></span>
-                <p class="alert"> Apenas letras minúsculas e sem acento.</p>
-            </div>
+        <section class="content">
+            <form>
+                <textarea id="enter_text" type="text" placeholder="Digite seu texto"></textarea>
+                <div class="content-alert">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z"/></svg></span>
+                    <p class="alert"> Apenas letras minúsculas e sem acento.</p>
+                </div>
+                
+                <div class="group-btn">
+                    <button id="cript" class="btn btn-dark">Criptografar</button>
+                    <button id="descript" class="btn btn-simple" >Descriptografar</button>
+                </div>
+            </form>
             
-            <div class="group-btn">
-                <button id="criptografar" class="btn btn-dark">Criptografar</button>
-                <button id="descriptografar" class="btn btn-simple">Descriptografar</button>
-            </div>
-        </div>
-        <aside class="content-return">
-            <div id="return_text" class="content-return-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis quas dignissimos. Quod, dolores incidunt ad quibusdam molestias ullam accusantium. Quibusdam iste dolorem quisquam ad culpa officia explicabo. Fugit, aliquam.</p>
-                <button class="btn btn-simple">Copiar</button>
-            </div>
+        </section>
+        <section id="return" class="content-return">
             <div id="return_img" class="content-false-return">
                 <img src="./assets/image.svg" width="250">
                 <h3>Nenhuma mensagem encontrada</h3>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-        </aside>
+        </section>
 
     </main>
 
