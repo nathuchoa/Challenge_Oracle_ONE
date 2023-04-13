@@ -9,7 +9,6 @@ fieldset, form, label, aside, canvas,  footer, header, section, textarea {
 	padding: 0;
 	border: 0;
     font-family: 'Inter', sans-serif;
-    box-sizing: border-box;
 }
 
 body{
@@ -17,6 +16,9 @@ body{
     font-family: "Inter", sans-serif;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+
 }
 
 header{
@@ -27,17 +29,17 @@ main{
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 20px;
-    width: 90%;
+    max-width: 80%;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px;
     margin-left: 60px;
     padding: 20px;
-    height: 90vh;
+    height: 80vh;
 }
 
 .textarea-input{
@@ -46,7 +48,7 @@ main{
     background-color: transparent;
     border: 0;
     height: 50vh;
-    max-width: 100%;
+    width: 100%;
 }
 
 textarea::placeholder{
@@ -64,7 +66,7 @@ textarea:focus {
     gap:5px;
 }
 
-.alert{
+.info{
     color: #495057;
     font-size: 12px;
     opacity: 0.8;
@@ -81,8 +83,8 @@ textarea:focus {
 .btn{
     margin-top: 10px;
     padding: 20px;
-    width: 48%;
-    min-width: fit-content;
+    width: max-content;
+    min-width: 48%;
     border-radius: 24px;
     height: 60px;
     font-size: 1.2rem;
@@ -108,8 +110,8 @@ textarea:focus {
     padding: 25px;
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    height: 100%;
-    min-width: 300px;
+    height: 80vh;
+    min-width: 35vh;
 }
 
 .content-return-text{
@@ -117,11 +119,14 @@ textarea:focus {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
-.content-return-text p{
+#text{
+    height: 100%;
+    width: 100%;
     color:#495057;
-    font-size: 1.2rem;
+    font-size: 100%;
 }
 
 .content-return-text .btn{
@@ -129,8 +134,12 @@ textarea:focus {
 }
 
 .content-false-return {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    height: 100%;
 }
 
 .content-false-return h3{
@@ -154,6 +163,8 @@ footer{
     margin: 0;
     padding: 10px;
     gap: 10px;
+    bottom: 0;
+    position: fixed;
     width: 100%;
 }
 
@@ -165,7 +176,8 @@ footer{
     }
 
     .content{
-        margin: 0px; 
+        margin: 0px;
+        min-width: 70vh; 
     } 
 
     textarea, textarea::placeholder{
@@ -174,7 +186,7 @@ footer{
     }
 
     .btn{
-        width: 90vw;
+        width: 70vw;
     }
 
     .content-return{
