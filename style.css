@@ -89,7 +89,13 @@ textarea:focus {
 .btn-dark {
     background-color: #0A3871;
     color: #fff;
-    border: 1px solid #0A3871;
+    border: 3px solid #0A3871;
+}
+
+.btn-dark:hover{
+    transition: 0.2s;
+    background-color: #495057;
+    border: 3px solid rgb(151, 151, 151);
 }
 
 .btn-simple {
@@ -97,6 +103,12 @@ textarea:focus {
     background-color: transparent;
     color: black;
     border: 1px solid #0A3871;
+}
+
+.btn-simple:hover{
+    transition: 0.2s;
+    background-color: #cfcfcf;
+    border: 1px solid #979797;
 }
 
 .content-return {
